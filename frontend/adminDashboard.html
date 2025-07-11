@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel de Administración - OirlaFeliz</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Bienvenido, Administrador</h2>
+        <p>Gestión de usuarios y artistas aquí.</p>
+        <button onclick="logout()">Cerrar Sesión</button>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (!localStorage.getItem('token')) {
+                window.location.href = 'index.html';
+            }
+        });
+        function logout() {
+            localStorage.removeItem('token');
+            localStorage.removeItem('rol');
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>

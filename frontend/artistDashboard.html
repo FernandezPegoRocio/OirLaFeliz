@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel de Artista - OirlaFeliz</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Bienvenido, Artista</h2>
+        <p>Gestiona tu perfil y eventos aquí.</p>
+        <button onclick="logout()">Cerrar Sesión</button>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (!localStorage.getItem('token') || localStorage.getItem('rol') !== 'ARTIST') {
+                window.location.href = 'index.html';
+            }
+        });
+        function logout() {
+            localStorage.removeItem('token');
+            localStorage.removeItem('rol');
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>

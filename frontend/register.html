@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - OirlaFeliz</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <form class="form-container" id="registerForm">
+        <h2>Registro</h2>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" required>
+        <label for="age">Edad:</label>
+        <input type="number" id="age" required min="0">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" required>
+        <label for="rol">Rol:</label>
+        <select id="rol">
+            <option value="ARTIST">Artista</option>
+            <option value="ADMIN">Administrador</option>
+        </select>
+        <button type="submit">Registrarse</button>
+        <p id="message"></p>
+        <p>¿Ya tienes cuenta? <a href="index.html">Inicia sesión aquí</a></p>
+    </form>
+    <script src="js/script.js"></script>
+</body>
+</html>

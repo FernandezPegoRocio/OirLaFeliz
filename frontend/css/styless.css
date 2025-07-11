@@ -1,0 +1,62 @@
+/* frontend/css/styles.css */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f2f2f2;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.form-container {
+  width: 300px;
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+form label {
+  margin-top: 10px;
+  display: block;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  margin-top: 15px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+form p {
+  margin-top: 10px;
+  text-align: center;
+}
+
+#message {
+  color: red;
+  text-align: center;
+}
